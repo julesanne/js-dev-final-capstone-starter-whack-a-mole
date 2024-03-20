@@ -25,17 +25,11 @@ h2 {
   -webkit-text-stroke: 1px black;
 }
 
-button {
-display: flex;
-align-items: center;
+.start {
+  text-align: center;
 }
 
-#start {
-    text-align: center;
-    font-size: 30px;
-}
-
-#timer{
+.timer{
     color: white;
 }
 
