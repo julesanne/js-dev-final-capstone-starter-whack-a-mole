@@ -9,7 +9,7 @@ let time = 15;
 let timer;
 let lastHole = 0;
 let points = 0;
-let difficulty = "easy";
+let difficulty = "normal";
 
 /**
  * Generates a random integer within a range.
@@ -43,7 +43,9 @@ function setDelay(difficulty) {
 	if (difficulty === "easy") {
 		return 1500;
 	} else if (difficulty === "normal") {
-		return 1000;
+		return 1000; 
+  } else if (difficulty === "hard") {
+    return 856;
 	} else {
 		return randomInteger(600, 1200);
 	}
@@ -262,7 +264,7 @@ function setDuration(duration) {
 function stopGame(){
   // stopAudio(song);  //optional
   clearInterval(timer);
-  time = 15;
+  time = 20;
   return "game stopped";
 }
 
