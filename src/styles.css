@@ -25,6 +25,9 @@ h2 {
   -webkit-text-stroke: 1px black;
 }
 
+.score{
+  text-align: center;
+}
 .start {
   text-align: center;
 }
