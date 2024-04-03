@@ -1,15 +1,34 @@
 const holes = document.querySelectorAll(".hole");
 const moles = document.querySelectorAll(".mole");
 const startButton = document.querySelector("#start");
+const audioHit = new Audio("https://github.com/Thinkful-Ed/js-dev-final-capstone-starter-whack-a-mole/blob/main/assets/molesong.mp3?raw=true");
+const song = new Audio("https://github.com/Thinkful-Ed/js-dev-final-capstone-starter-whack-a-mole/blob/main/assets/molesong.mp3?raw=true");
 // TODO: Add the missing query selectors:
 const score = document.querySelector("#score") // Use querySelector() to get the score element
 const timerDisplay = document.querySelector("#timer") // use querySelector() to get the timer element.
 
-let time = 15;
+let time = 20;
 let timer;
 let lastHole = 0;
 let points = 0;
 let difficulty = "normal";
+
+function playAudio(audioObject) {
+  audioObject.play();
+}
+
+function loopAudio(audioObject) {
+  audioObject.loop = true;
+  playAudio(audioObject);
+}
+
+function stopAudio(audioObject) {
+  audioObject.pause();
+}
+
+function play(){
+  playAudio(song);
+}
 
 /**
  * Generates a random integer within a range.
@@ -262,7 +281,7 @@ function setDuration(duration) {
 *
 */
 function stopGame(){
-  // stopAudio(song);  //optional
+  stopAudio(song);  //optional
   clearInterval(timer);
   time = 20;
   return "game stopped";
