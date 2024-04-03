@@ -12,7 +12,7 @@ html {
 
 h1 {
   text-align: center;
-  font-size: 85px;
+  font-size: 75px;
   font-family: "Comic Sans MS", "Comic Sans", cursive;
   color: blue;
   -webkit-text-stroke: 2px black;
@@ -40,18 +40,18 @@ h2 {
 
 button{
   width: 200px;
-  height: 50px;
+  height: 40px;
   border: 5px solid red;
   font-weight: bolder;
   font-size: x-large;
 }
 
 .grid {
-  width: 600px;
-  height: 400px;
+  width: 700px;
+  height: 350px;
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto;
+  margin: auto;
   /*cursor: url('./assets/mallet.png'), pointer;*/
 }
 
