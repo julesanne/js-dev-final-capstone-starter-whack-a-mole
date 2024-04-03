@@ -48,17 +48,15 @@ button{
 
 .grid {
   width: 700px;
-  height: 350px;
+  height: 300px;
   display: flex;
   flex-wrap: wrap;
-  margin: auto;
+  margin: 0 auto;
   /*cursor: url('./assets/mallet.png'), pointer;*/
 }
 
 .hole {
   flex: 1 0 33.33%;
-  overflow: hidden;
-  position: relative;
 }
 
 .hole:after {
